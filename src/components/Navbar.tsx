@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 export const Navbar: React.FunctionComponent = () => (
   <nav>
-    <div className="nav-wrapper purple darken-2 px1">
+    <div className="nav-wrapper blue darken-2 px1">
       <a href="/" className="brand-logo">
         React + Typescript
       </a>

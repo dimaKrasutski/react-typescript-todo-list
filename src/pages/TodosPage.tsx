@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react'
-import { TodoForm } from '../components/TodoForm'
-import { TodoList } from '../components/TodoList'
-import { ITodo } from '../interfaces'
+import React, { useState, useEffect } from 'react';
+import { TodoForm } from '../components/TodoForm';
+import { TodoList } from '../components/TodoList';
+import { ITodo } from '../interfaces';
 
 declare var confirm: (question: string) => boolean
 
-export const TodosPage: React.FC = () => {
+const TodosPage: React.FC = () => {
   const [todos, setTodos] = useState<ITodo[]>([])
 
   useEffect(() => {
@@ -23,7 +23,6 @@ export const TodosPage: React.FC = () => {
       id: Date.now(),
       completed: false
     }
-    // setTodos([newTodo, ...todos])
     setTodos(prev => [newTodo, ...prev])
   }
 
@@ -57,3 +56,5 @@ export const TodosPage: React.FC = () => {
     </React.Fragment>
   )
 }
+
+export default TodosPage;

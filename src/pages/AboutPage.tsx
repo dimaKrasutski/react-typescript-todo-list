@@ -1,8 +1,8 @@
-import React from 'react'
-import { useHistory } from 'react-router-dom'
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 
-export const AboutPage: React.FC = () => {
-  const history = useHistory()
+const AboutPage: React.FC = () => {
+  const history = useHistory();
   return (
     <>
       <h1>Страница информации</h1>
@@ -15,5 +15,7 @@ export const AboutPage: React.FC = () => {
         Обратно к списку дел
       </button>
     </>
-  )
-}
+  );
+};
+
+export default AboutPage;
